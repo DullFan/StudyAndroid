@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/lean_cloud_home_rv_item_img" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end_left_rv">
+        <Constraint android:id="@id/lean_cloud_home_rv_item_img" />
+        <Constraint
+            android:id="@+id/lean_cloud_home_rv_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/lean_cloud_home_rv_item_img" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end_left_rv"
+        app:constraintSetStart="@+id/start" >
+        <KeyFrameSet >
+            <KeyTimeCycle
+                app:motionTarget="@+id/lean_cloud_home_rv_item_text"
+                app:framePosition="36"
+                app:wavePeriod="1"
+                android:translationX="10dp"
+                app:waveOffset="0dp" />
+            <KeyTimeCycle
+                app:motionTarget="@+id/lean_cloud_home_rv_item_img"
+                app:framePosition="97"
+                app:wavePeriod="1"
+                android:translationX="10dp"
+                app:waveOffset="0dp" />
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>

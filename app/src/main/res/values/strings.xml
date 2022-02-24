@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">StudyAndroid</string>
-    <string name="text1">TextView</string>
-    <string name="text2">This is a Message!</string>
-    <string name="button">Button</string>
+    <string name="app_name">学习之旅</string>
+    <string name="motion_nav_name1">基本运动</string>
+    <string name="motion_nav_name2">自定义属性 - backgroundColor</string>
+    <string name="motion_nav_name3">ImageFilterView - 图片转换</string>
+    <string name="motion_nav_name4">关键帧位置</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/motionFragment1"
+        android:title="@string/motion_nav_name1" />
+    <item
+        android:id="@+id/motionFragment2"
+        android:title="@string/motion_nav_name2" />
+    <item
+        android:id="@+id/motionFragment3"
+        android:title="@string/motion_nav_name3" />
+    <item
+        android:id="@+id/motionFragment4"
+        android:title="@string/motion_nav_name4" />
+
+</menu>

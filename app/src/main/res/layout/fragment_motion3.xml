@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".study.motionlayout.MotionFragment3"
+    app:layoutDescription="@xml/fragment_motion3_scene">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/motion3_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rv_img12" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

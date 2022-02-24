@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".study.systeminterface.SystemInterfaceActivity">
+
+        <Button
+            android:id="@+id/system_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="调暗系统栏"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/system_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐藏系统栏"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/system_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐藏导航栏"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/system_button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动全屏模式"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+</layout>

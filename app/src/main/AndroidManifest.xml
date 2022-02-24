@@ -2,13 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.studyandroid">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name=".utils.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,6 +24,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyAndroid"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".study.fingerprint.Fingerprint"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name=".study.toolbar.ToolbarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.fast.FastActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.searchlight.SearchlightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.scratch.ScratchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.motionlayout.MotionLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.leancloud.LeanCLoudHome"
+            android:exported="false" />
+        <activity
+            android:name=".study.leancloud.LeanCLoudLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".study.leancloud.LeanCLoudSignUp"
+            android:exported="false" />
+
+        <service
+            android:name="cn.leancloud.push.PushService"
+            android:exported="false" />
+        <service
+            android:name="cn.leancloud.push.PushService"
+            android:exported="false" />
+
+        <receiver
+            android:name="cn.leancloud.push.LCBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.leancloud.push.LCBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".MainActivity"
