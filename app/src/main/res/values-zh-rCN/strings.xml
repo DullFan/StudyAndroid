@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">学习Android</string>
+    <string name="text1">文本</string>
+    <string name="text2">这是一个内容</string>
+    <string name="button">按钮</string>
+</resources>
