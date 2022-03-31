@@ -4,7 +4,7 @@
 
 学习Android
 目前有
-    --> 刮刮乐 --- scratch
+    --> 刮刮乐 --- scratch /n
     --> LeanCloud的使用 --- leancloud
     --> MotionLayout的使用 --- motionlayout
     --> 探照灯 --- searchlight
