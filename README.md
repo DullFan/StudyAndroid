@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # App
 学习Android
 目前有
@@ -8,3 +9,6 @@
     --> 添加快捷方式 --- fast
     --> 应用栏 --- toolbar
     --> 指纹识别 --- fingerprint
+=======
+# App
+>>>>>>> origin/master
