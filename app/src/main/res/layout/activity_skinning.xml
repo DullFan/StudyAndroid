@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rv_img10"
+        android:orientation="vertical"
+        tools:context=".study.skinning.Skinning">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/testColor1"
+            android:layout_marginHorizontal="20dp"
+            android:text="生活里许多人都在希望拥有自己的生活质量，活一回内心的安静，祥和才是真正的幸福，不要忽略了自己应该秉持的生活态度，客观，和气，大度。"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintBottom_toTopOf="@id/skinning_button"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/skinning_button3"
+                android:text="下载皮肤包"
+                android:textColor="@color/white"
+                android:background="@color/testColor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skinning_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="默认"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="@color/testColor2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/skinning_button2" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skinning_button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="换肤"
+            style="@style/Widget.MaterialComponents.Button"
+            android:backgroundTint="@color/testColor3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/skinning_button"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

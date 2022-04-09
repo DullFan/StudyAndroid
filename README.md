@@ -9,3 +9,4 @@
 * 添加快捷方式 --- fast
 * 应用栏 --- toolbar
 * 指纹识别 --- fingerprint
+* 换肤 --- skinning

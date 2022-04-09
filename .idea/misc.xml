@@ -25,6 +25,7 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_picture_in_picture.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_scratch.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_sign_up.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_skinning.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_system_interface.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_system_interface_actiivty.xml" value="0.21666666666666667" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_textlnput_layout.xml" value="0.22826086956521738" />
@@ -55,5 +56,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.23125" />
+      </ProjectState>
+    </option>
   </component>
 </project>

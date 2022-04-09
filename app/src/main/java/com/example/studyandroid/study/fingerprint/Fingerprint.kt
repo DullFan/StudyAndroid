@@ -58,7 +58,7 @@ class Fingerprint : BaseActivity() {
                     object : FingerprintManagerCompat.AuthenticationCallback() {
                         override fun onAuthenticationError(errMsgId: Int, errString: CharSequence) {
                             super.onAuthenticationError(errMsgId, errString)
-                            showLog("身份验证失败")
+                            showToast("身份验证失败")
                         }
 
                         override fun onAuthenticationHelp(
@@ -66,17 +66,17 @@ class Fingerprint : BaseActivity() {
                             helpString: CharSequence
                         ) {
                             super.onAuthenticationHelp(helpMsgId, helpString)
-                            showLog("$helpString")
+                            showToast("$helpString")
                         }
 
                         override fun onAuthenticationSucceeded(result: FingerprintManagerCompat.AuthenticationResult) {
                             super.onAuthenticationSucceeded(result)
-                            showLog("验证成功")
+                            showToast("验证成功")
                         }
 
                         override fun onAuthenticationFailed() {
                             super.onAuthenticationFailed()
-                            showLog("验证成功")
+                            showToast("验证成功")
                         }
                     },
                     null

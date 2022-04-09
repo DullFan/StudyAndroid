@@ -1,5 +1,6 @@
 package com.example.studyandroid
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +15,7 @@ import com.example.studyandroid.study.scratch.ScratchActivity
 import com.example.studyandroid.study.searchlight.SearchlightActivity
 import com.example.studyandroid.study.fast.FastActivity
 import com.example.studyandroid.study.fingerprint.Fingerprint
+import com.example.studyandroid.study.skinning.Skinning
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -31,10 +33,11 @@ class MainActivity : BaseActivity() {
                 "刮刮乐",
                 "LeanCloud的使用",
                 "MotionLayout的使用",
-                "自定义View",
+                "探照灯",
                 "快捷方式",
                 "应用栏",
                 "指纹识别",
+                "换肤",
             )
 
         viewBind.mainRv.apply {
@@ -52,6 +55,7 @@ class MainActivity : BaseActivity() {
                             4 -> startA(FastActivity::class.java, data)
                             5 -> startA(ToolbarActivity::class.java, data)
                             6 -> startA(Fingerprint::class.java, data)
+                            7 -> startA(Skinning::class.java, data)
                         }
                     }
                 }
