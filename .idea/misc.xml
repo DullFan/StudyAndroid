@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24739583333333334" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable/download_bar_back.xml" value="0.24739583333333334" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable/ic_baseline_android_24.xml" value="0.24739583333333334" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable/ic_baseline_dehaze.xml" value="0.2101851851851852" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable/ic_baseline_message_fill.xml" value="0.24739583333333334" />
@@ -14,6 +15,10 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_bubble.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_camerax.xml" value="0.21666666666666667" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_compose.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_customize_view.xml" value="0.33126293995859213" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_download.xml" value="0.176" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_download_actiivty.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_fast.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_fingerprint.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_lean_cloud_sign_up.xml" value="0.24947916666666667" />
@@ -22,6 +27,9 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_main2.xml" value="0.2427536231884058" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_motion_layout.xml" value="0.1" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_mvc.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_mvp.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_mvvm.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_picture_in_picture.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_scratch.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_sign_up.xml" value="0.24947916666666667" />
@@ -30,6 +38,7 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_system_interface_actiivty.xml" value="0.21666666666666667" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/activity_textlnput_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/footer_item.xml" value="0.8" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/fragment_customize_view1.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/fragment_motion1.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/fragment_motion2.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/fragment_motion3.xml" value="0.22" />
@@ -43,6 +52,8 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/messagee_icon_layout.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/layout/repo_item.xml" value="0.22916666666666666" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/menu/activity_toolbar_menu.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/menu/customize_view_menu.xml" value="0.36300174520069806" />
+        <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/menu/menu_jingziqi.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/menu/motion_layout_menu.xml" value="0.23125" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17685185185185184" />

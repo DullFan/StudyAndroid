@@ -6,6 +6,8 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
+import androidx.annotation.NonNull;
+
 public class SkinResources {
 
     private String mSkinPkgName;
@@ -16,7 +18,7 @@ public class SkinResources {
     // 皮肤包的resource
     private Resources mSkinResources;
 
-    private SkinResources(Context context) {
+    private SkinResources(@NonNull Context context) {
         mAppResources = context.getResources();
     }
 
@@ -94,7 +96,7 @@ public class SkinResources {
             return mAppResources.getDrawable(resId);
         }
         //通过 app的resource 获取id 对应的 资源名 与 资源类型
-        //找到 皮肤包 匹配 的 资源名资源类型 的 皮肤包的 资源 ID
+        //找到 皮肤包 匹配 的 资源名资源类型 的 皮肤包的 资源 ID4
         int skinId = getIdentifier(resId);
         if (skinId == 0) {
             return mAppResources.getDrawable(resId);
@@ -118,5 +120,4 @@ public class SkinResources {
             return getDrawable(resId);
         }
     }
-
 }

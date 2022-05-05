@@ -5,4 +5,7 @@
     <string name="motion_nav_name3">ImageFilterView - 图片转换</string>
     <string name="motion_nav_name4">关键帧位置</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="customize_nav_name1">文字绘制</string>
+    <string name="winner">赢</string>
 </resources>

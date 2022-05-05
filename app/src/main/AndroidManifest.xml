@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.studyandroid">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -15,7 +16,12 @@
 
     <uses-feature android:name="android.hardware.camera.any" />
 
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:name=".utils.MyApplication"
@@ -27,6 +33,35 @@
         android:theme="@style/Theme.StudyAndroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".study.compose_study.ComposeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.frameworktest.mvvm.view.MvvmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.frameworktest.mvp.view.MvpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.frameworktest.mvc.controller.MvcActivity"
+            android:exported="true" />
+        <activity
+            android:name=".study.customizeview.CustomizeViewActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.studyandroid.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pro" />
+        </provider>
+
+        <activity
+            android:name=".study.download.DownloadActivity"
+            android:exported="true" />
+        <activity
             android:name=".study.skinning.Skinning"
             android:exported="true" />
         <activity
@@ -34,9 +69,6 @@
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:exported="true"
             android:supportsPictureInPicture="true" />
-        <activity
-            android:name=".study.toolbar.ToolbarActivity"
-            android:exported="true" />
         <activity
             android:name=".study.fast.FastActivity"
             android:exported="true" />

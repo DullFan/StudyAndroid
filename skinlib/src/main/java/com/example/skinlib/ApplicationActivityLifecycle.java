@@ -52,7 +52,6 @@ public class ApplicationActivityLifecycle implements Application.ActivityLifecyc
                 (activity);
         LayoutInflaterCompat.setFactory2(layoutInflater, skinLayoutInflaterFactory);
         mLayoutInflaterFactories.put(activity, skinLayoutInflaterFactory);
-
         mObserable.addObserver(skinLayoutInflaterFactory);
     }
 

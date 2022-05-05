@@ -1,5 +1,6 @@
 package com.example.skinlib;
 
+import android.content.res.ColorStateList;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -11,6 +12,8 @@ import androidx.core.view.ViewCompat;
 
 import com.example.skinlib.utils.SkinResources;
 import com.example.skinlib.utils.SkinThemeUtils;
+import com.google.android.material.progressindicator.CircularProgressIndicator;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +32,11 @@ public class SkinAttribute {
         mAttributes.add("drawableTop");
         mAttributes.add("drawableRight");
         mAttributes.add("drawableBottom");
+        mAttributes.add("backgroundTint");
+        mAttributes.add("trackColor");
+        mAttributes.add("indicatorColor");
+        mAttributes.add("changeColor");
+        mAttributes.add("originColor");
     }
 
     //记录换肤需要操作的View与属性信息
@@ -42,6 +50,7 @@ public class SkinAttribute {
         for (int i = 0; i < attrs.getAttributeCount(); i++) {
             //获得属性名  textColor/background
             String attributeName = attrs.getAttributeName(i);
+            ;
 
             if (mAttributes.contains(attributeName)) {
                 // 获取属性值
@@ -51,6 +60,7 @@ public class SkinAttribute {
                     continue;
                 }
                 int resId;
+
                 // 以 ？开头的表示使用 属性
                 if (attributeValue.startsWith("?")) {
                     int attrId = Integer.parseInt(attributeValue.substring(1));
@@ -59,6 +69,8 @@ public class SkinAttribute {
                     // 正常以 @ 开头
                     resId = Integer.parseInt(attributeValue.substring(1));
                 }
+
+
                 SkinPair skinPair = new SkinPair(attributeName, resId);
                 mSkinPars.add(skinPair);
             }
@@ -90,7 +102,6 @@ public class SkinAttribute {
         public SkinView(View view, List<SkinPair> skinPairs) {
             this.view = view;
             this.skinPairs = skinPairs;
-
         }
 
         /**
@@ -100,6 +111,7 @@ public class SkinAttribute {
             applySkinSupport();
             for (SkinPair skinPair : skinPairs) {
                 Drawable left = null, top = null, right = null, bottom = null;
+
                 switch (skinPair.attributeName) {
                     case "background":
                         Object background = SkinResources.getInstance().getBackground(skinPair
@@ -110,6 +122,12 @@ public class SkinAttribute {
                         } else {
                             ViewCompat.setBackground(view, (Drawable) background);
                         }
+                        break;
+                    case "backgroundTint":
+                        background = SkinResources.getInstance().getBackground(skinPair
+                                .resId);
+                        //背景可能是 @color 也可能是 @drawable
+                        view.setBackgroundTintList(ColorStateList.valueOf((Integer) background));
                         break;
                     case "src":
                         background = SkinResources.getInstance().getBackground(skinPair
@@ -125,6 +143,42 @@ public class SkinAttribute {
                         ((TextView) view).setTextColor(SkinResources.getInstance().getColorStateList
                                 (skinPair.resId));
                         break;
+//                    case "changeColor":
+//                        ((CustomizeViewFragmentUi1)view).setChangeColor(skinPair.resId);
+//                        break;
+//
+//                    case "originColor":
+//                        ((CustomizeViewFragmentUi1)view).setOriginColor(skinPair.resId);
+//                        break;
+                    case "trackColor":
+                        if (view instanceof CircularProgressIndicator) {
+                            ((CircularProgressIndicator) view).setTrackColor(
+                                    SkinResources.getInstance().getColor(skinPair.resId)
+                            );
+                        }
+
+                        if (view instanceof LinearProgressIndicator) {
+                            ((LinearProgressIndicator) view).setTrackColor(
+                                    SkinResources.getInstance().getColor(skinPair.resId)
+                            );
+                        }
+
+                        break;
+
+                    case "indicatorColor":
+                        if (view instanceof CircularProgressIndicator) {
+                            ((CircularProgressIndicator) view).setIndicatorColor(
+                                    SkinResources.getInstance().getColor(skinPair.resId)
+                            );
+                        }
+
+                        if (view instanceof LinearProgressIndicator) {
+                            ((LinearProgressIndicator) view).setIndicatorColor(
+                                    SkinResources.getInstance().getColor(skinPair.resId)
+                            );
+                        }
+
+                        break;
                     case "drawableLeft":
                         left = SkinResources.getInstance().getDrawable(skinPair.resId);
                         break;
@@ -137,6 +191,7 @@ public class SkinAttribute {
                     case "drawableBottom":
                         bottom = SkinResources.getInstance().getDrawable(skinPair.resId);
                         break;
+
                     default:
                         break;
                 }

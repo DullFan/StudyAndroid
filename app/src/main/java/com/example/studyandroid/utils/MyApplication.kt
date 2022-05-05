@@ -2,7 +2,7 @@ package com.example.studyandroid.utils
 
 import android.app.Application
 import cn.leancloud.LeanCloud
-import com.example.skinlib.SkinManager
+import com.example.studyandroid.skin.SkinManager
 import dagger.hilt.android.HiltAndroidApp
 
 
