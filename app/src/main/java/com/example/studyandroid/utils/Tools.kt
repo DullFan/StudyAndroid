@@ -5,5 +5,5 @@ import android.util.Log
 const val TAG = "showLog"
 
 fun <T> showLog(value:T){
-    Log.e("showLog","$value")
+    Log.e("8","$value")
 }

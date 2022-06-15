@@ -2,6 +2,7 @@ package com.example.studyandroid.study.customizeview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.TypedValue
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -27,7 +28,7 @@ class CustomizeViewActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         appBarConfiguration = AppBarConfiguration
-            .Builder(setOf(R.id.customizeViewFragment1))
+            .Builder(setOf(R.id.customizeViewFragment1, R.id.custFm2,R.id.custFm3,R.id.custFm4,R.id.custFm5))
             .setOpenableLayout(viewBind.customizeDrawer)
             .build()
 

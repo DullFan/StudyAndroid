@@ -3,11 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/customize_nav"
-    app:startDestination="@id/customizeViewFragment1">
+    app:startDestination="@id/custFm5">
 
     <fragment
         android:id="@+id/customizeViewFragment1"
         android:name="com.example.studyandroid.study.customizeview.cust_fm1.CustomizeViewFragment1"
         android:label="@string/customize_nav_name1"
         tools:layout="@layout/fragment_customize_view1" />
+
+
+    <fragment
+        android:id="@+id/custFm2"
+        android:name="com.example.studyandroid.study.customizeview.cust_fm2.CustFm2"
+        android:label="@string/customize_nav_name2"
+        tools:layout="@layout/fragment_cust_fm2" />
+    <fragment
+        android:id="@+id/custFm3"
+        android:name="com.example.studyandroid.study.customizeview.cust_fm3.CustFm3"
+        android:label="@string/customize_nav_name3"
+        tools:layout="@layout/fragment_cust_fm3" />
+    <fragment
+        android:id="@+id/custFm4"
+        android:name="com.example.studyandroid.study.customizeview.cust_fm4.CustFm4"
+        android:label="@string/customize_nav_name4"
+        tools:layout="@layout/fragment_cust_fm4" />
+    <fragment
+        android:id="@+id/custFm5"
+        android:name="com.example.studyandroid.study.customizeview.cust_fm5.CustFm5"
+        android:label="@string/customize_nav_name5"
+        tools:layout="@layout/fragment_cust_fm5" />
+
+
 </navigation>

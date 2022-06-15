@@ -18,26 +18,10 @@ class CustomizeViewFragment1 : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
         viewBinding = FragmentCustomizeView1Binding.inflate(inflater,container,false)
-        viewBinding.customizeView1Button1.setOnClickListener {
-            setAnimation(Direction.LEFT_TO_RIGHT)
-        }
-
-        viewBinding.customizeView1Button2.setOnClickListener {
-            setAnimation(Direction.RIGHT_TO_LEF)
-        }
 
         return viewBinding.root
     }
-    fun setAnimation(dir: Direction) {
-        viewBinding.customizeView1Ui.mDirection = dir
-        val animator: ValueAnimator = ObjectAnimator.ofFloat(0f, 1f)
-        animator.setDuration(3000)
-        animator.addUpdateListener {
-            val num = it.animatedValue as Float
-            viewBinding.customizeView1Ui.mCurrentProgress = num
-        }
-        animator.start()
-    }
+
 
 
 }

@@ -144,13 +144,7 @@ public class SkinAttribute {
                         ((TextView) view).setTextColor(SkinResources.getInstance().getColorStateList
                                 (skinPair.resId));
                         break;
-                    case "changeColor":
-                        ((CustomizeViewFragmentUi1) view).setChangeColor(SkinResources.getInstance().getColor(skinPair.resId));
-                        break;
 
-                    case "originColor":
-                        ((CustomizeViewFragmentUi1) view).setOriginColor(SkinResources.getInstance().getColor(skinPair.resId));
-                        break;
                     case "trackColor":
                         if (view instanceof CircularProgressIndicator) {
                             ((CircularProgressIndicator) view).setTrackColor(

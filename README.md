@@ -1,5 +1,9 @@
 # App
 
+观看格式:
+
+功能名字 --- 包名
+
 目前有：
 
 * 刮刮乐 --- scratch
@@ -12,3 +16,6 @@
 * 下载APK --- download
 * 自定义View --- customizeview
 * MVC、MVP、MVVM --- frameworktest
+* 共享元素动画 --- shared
+* BottomNavigationView + Lottie 实现的底部导航栏 --- bnvl
+* Compose学习 --- compose_study

@@ -3,8 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/customize_item1"
+        android:id="@+id/customizeViewFragment1"
         android:title="@string/customize_nav_name1" />
 
+    <item
+        android:id="@+id/custFm2"
+        android:title="@string/customize_nav_name2" />
+
+    <item
+        android:id="@+id/custFm3"
+        android:title="@string/customize_nav_name3" />
+
+    <item
+        android:id="@+id/custFm4"
+        android:title="@string/customize_nav_name4" />
+
+    <item
+        android:id="@+id/custFm5"
+        android:title="@string/customize_nav_name5" />
 
 </menu>
