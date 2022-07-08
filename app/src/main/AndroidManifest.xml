@@ -34,11 +34,14 @@
         android:theme="@style/Theme.StudyAndroid"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".study.datastorestudy.DataStoreStudy"
-            android:exported="true">
-
-
-        </activity>
+            android:name=".study.coordinator_layout.CoordinatorLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.databinding_and_rv.DataBindingAndRvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.coroutine.CoroutineActivity"
+            android:exported="false" />
         <activity
             android:name=".study.shared.ShareDetailsActivity"
             android:exported="true" />
@@ -47,9 +50,6 @@
             android:exported="true" />
         <activity
             android:name=".study.bnvl.BottomNavigationViewOrLottieActivity"
-            android:exported="true" />
-        <activity
-            android:name=".study.compose_study.ComposeActivity"
             android:exported="true" />
         <activity
             android:name=".study.frameworktest.mvvm.view.MvvmActivity"
@@ -62,7 +62,7 @@
             android:exported="true" />
         <activity
             android:name=".study.customizeview.CustomizeViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -144,7 +144,7 @@
                 <action android:name="dullfan" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>(
+            </intent-filter>
         </activity>
     </application>
 

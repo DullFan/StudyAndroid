@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/coordinator_layout_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".study.coordinator_layout.CoordinatorLayoutActivity">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/coordinator_layout_fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/coordinatorlayout_nav"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/coordinator_layout_navigationView"
+            style="@style/Widget.MaterialComponents.BottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/coordinator_layout_layout_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

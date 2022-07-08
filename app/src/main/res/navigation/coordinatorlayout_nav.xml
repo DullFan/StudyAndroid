@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorlayout_nav"
+    app:startDestination="@id/coordinatorLayoutFragment01">
+
+    <fragment
+        android:id="@+id/coordinatorLayoutFragment01"
+        android:name="com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutFragment01"
+        android:label="@string/coordinator_nav_name1"
+        tools:layout="@layout/fragment_coordinator_layout01" />
+    <fragment
+        android:id="@+id/coordinatorLayoutFragment02"
+        android:name="com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutFragment02"
+        android:label="@string/coordinator_nav_name2" />
+    <fragment
+        android:id="@+id/coordinatorLayoutFragment03"
+        android:name="com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutFragment03"
+        android:label="@string/coordinator_nav_name3"
+        tools:layout="@layout/fragment_coordinator_layout03" />
+
+    <fragment
+        android:id="@+id/coordinatorLayoutFragment04"
+        android:name="com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutFragment04"
+        android:label="@string/coordinator_nav_name4"
+        tools:layout="@layout/fragment_coordinator_layout04" />
+    <fragment
+        android:id="@+id/coordinatorLayoutFragment05"
+        android:name="com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutFragment05"
+        android:label="@string/coordinator_nav_name5"
+        tools:layout="@layout/fragment_coordinator_layout05" />
+
+
+</navigation>

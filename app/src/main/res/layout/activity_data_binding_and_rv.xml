@@ -10,7 +10,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".study.datastorestudy.DataStoreStudy">
+        tools:context=".study.databinding_and_rv.DataBindingAndRvActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/databingin_and_rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:spanCount="2"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_data_binding_and_rv"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

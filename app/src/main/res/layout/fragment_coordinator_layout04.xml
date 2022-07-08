@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".study.coordinator_layout.CoordinatorLayoutFragment04">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/coll"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rv_img12" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title="主题"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="悬停一号"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="悬停二号"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/testasdasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

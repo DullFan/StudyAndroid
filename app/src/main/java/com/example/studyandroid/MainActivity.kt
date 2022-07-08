@@ -8,9 +8,10 @@ import com.example.studyandroid.base.BaseActivity
 import com.example.studyandroid.databinding.ActivityMainBinding
 import com.example.studyandroid.databinding.ItemMainRvBinding
 import com.example.studyandroid.study.bnvl.BottomNavigationViewOrLottieActivity
-import com.example.studyandroid.study.compose_study.ComposeActivity
+import com.example.studyandroid.study.coordinator_layout.CoordinatorLayoutActivity
+import com.example.studyandroid.study.coroutine.CoroutineActivity
 import com.example.studyandroid.study.customizeview.CustomizeViewActivity
-import com.example.studyandroid.study.datastorestudy.DataStoreStudy
+import com.example.studyandroid.study.databinding_and_rv.DataBindingAndRvActivity
 import com.example.studyandroid.study.download.DownloadActivity
 import com.example.studyandroid.study.leancloud.LeanCLoudLogIn
 import com.example.studyandroid.study.motionlayout.MotionLayoutActivity
@@ -23,10 +24,8 @@ import com.example.studyandroid.study.frameworktest.mvp.view.MvpActivity
 import com.example.studyandroid.study.frameworktest.mvvm.view.MvvmActivity
 import com.example.studyandroid.study.shared.SharedElementsActivity
 import com.example.studyandroid.study.skinning.Skinning
-import dagger.hilt.android.AndroidEntryPoint
 
 
-@AndroidEntryPoint
 class MainActivity : BaseActivity() {
     lateinit var viewBind: ActivityMainBinding
 
@@ -49,10 +48,11 @@ class MainActivity : BaseActivity() {
                 "MVC",
                 "MVP",
                 "MVVM",
-                "Compose测试",
                 "BottomNavigationView + Lottie",
                 "共享动画",
-                "DataStore使用",
+                "协程 + Flow",
+                "DataBinding + RecyclerView",
+                "CoordinatorLayout的使用",
             )
 
         viewBind.mainRv.apply {
@@ -75,10 +75,11 @@ class MainActivity : BaseActivity() {
                             9 -> startA(MvcActivity::class.java, data)
                             10 -> startA(MvpActivity::class.java, data)
                             11 -> startA(MvvmActivity::class.java, data)
-                            12 -> startA(ComposeActivity::class.java, data)
-                            13 -> startA(BottomNavigationViewOrLottieActivity::class.java, data)
-                            14 -> startA(SharedElementsActivity::class.java, data)
-                            15 -> startA(DataStoreStudy::class.java, data)
+                            12 -> startA(BottomNavigationViewOrLottieActivity::class.java, data)
+                            13 -> startA(SharedElementsActivity::class.java, data)
+                            14 -> startA(CoroutineActivity::class.java, data)
+                            15 -> startA(DataBindingAndRvActivity::class.java, data)
+                            16 -> startA(CoordinatorLayoutActivity::class.java, data)
                         }
                     }
                 }
@@ -86,7 +87,3 @@ class MainActivity : BaseActivity() {
         }
     }
 }
-
-
-
-

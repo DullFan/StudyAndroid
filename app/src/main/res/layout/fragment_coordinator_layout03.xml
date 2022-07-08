@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".study.coordinator_layout.CoordinatorLayoutFragment03">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/coll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#FA7199"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rv_img12" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="江江江江江江"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/testasdasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!Hellow!" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

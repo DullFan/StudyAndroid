@@ -18,4 +18,6 @@
 * MVC、MVP、MVVM --- frameworktest
 * 共享元素动画 --- shared
 * BottomNavigationView + Lottie 实现的底部导航栏 --- bnvl
-* Compose学习 --- compose_study
+* 协程 + Flow --- coroutine
+* DataBinding 和 RecyclerView 联合使用 --- databinding_and_rv
+* CoordinatorLayout的使用 --- coordinator_layout

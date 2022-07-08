@@ -13,4 +13,13 @@
     <string name="customize_nav_name5">MaterialEditText</string>
 
     <string name="winner">赢</string>
+
+    <string name="coroutine_string">开始(%s件商品)</string>
+
+    <string name="coordinator_nav_name1">自定义Behavior</string>
+    <string name="coordinator_nav_name2">RecyclerView上滑标题栏缩小</string>
+    <string name="coordinator_nav_name3">NestedScrollView上滑标题栏缩小</string>
+    <string name="coordinator_nav_name4">悬浮栏(第一种方式)</string>
+    <string name="coordinator_nav_name5">悬浮栏(第二种方式)</string>
+
 </resources>

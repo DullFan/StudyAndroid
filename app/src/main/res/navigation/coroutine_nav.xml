@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coroutine_nav"
+    app:startDestination="@id/coroutineHomeFragment">
+
+    <fragment
+        android:id="@+id/coroutineHomeFragment"
+        android:name="com.example.studyandroid.study.coroutine.CoroutineHomeFragment"
+        android:label="CoroutineHomeFragment">
+        <action
+            android:id="@+id/action_coroutineHomeFragment_to_coroutineDownloadFragment"
+            app:destination="@id/coroutineDownloadFragment"
+            app:enterAnim="@anim/fragment_in"
+            app:exitAnim="@anim/fragment_out"
+            app:popEnterAnim="@anim/fragment_in"
+            app:popExitAnim="@anim/fragment_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coroutineDownloadFragment"
+        android:name="com.example.studyandroid.study.coroutine.CoroutineDownloadFragment"
+        android:label="fragment_coroutine_download"
+        tools:layout="@layout/fragment_coroutine_download" />
+
+</navigation>

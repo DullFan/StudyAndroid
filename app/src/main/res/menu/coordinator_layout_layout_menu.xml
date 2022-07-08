@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/coordinatorLayoutFragment01"
+        android:title="@string/coordinator_nav_name1" />
+
+    <item
+        android:id="@+id/coordinatorLayoutFragment02"
+        android:title="@string/coordinator_nav_name2" />
+
+    <item
+        android:id="@+id/coordinatorLayoutFragment03"
+        android:title="@string/coordinator_nav_name3" />
+
+    <item
+        android:id="@+id/coordinatorLayoutFragment04"
+        android:title="@string/coordinator_nav_name4" />
+
+    <item
+        android:id="@+id/coordinatorLayoutFragment05"
+        android:title="@string/coordinator_nav_name5" />
+
+</menu>

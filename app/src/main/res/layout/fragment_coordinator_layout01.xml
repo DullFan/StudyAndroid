@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".study.coordinator_layout.CoordinatorLayoutFragment01">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_behavior=".study.coordinator_layout.fragment01.CoordinatorFragment01Behavior"
+        android:src="@mipmap/ic_launcher"/>
+
+    <com.example.studyandroid.study.coordinator_layout.fragment01.CoordinatorFragment01TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="这是一段对话"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

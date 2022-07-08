@@ -37,6 +37,26 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/xml/scene_24.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_annotation.xml" value="0.2210144927536232" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_coordinator_layout.xml" value="0.15670289855072464" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_coroutine.xml" value="0.23641304347826086" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_data_binding_and_rv.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_data_store_study.xml" value="0.109375" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_motion_layout.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_my_card_view.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_shared_elements.xml" value="0.23641304347826086" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout01.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout02.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout03.xml" value="0.21189591078066913" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout04.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout05.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coroutine_download.xml" value="0.1897644927536232" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coroutine_home.xml" value="0.136" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_cust_fm5.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_data_binding_and_rv.xml" value="0.2047008547008547" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_main_rv.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/coordinator_layout_layout_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/motion_layout_menu.xml" value="0.24947916666666667" />
       </map>
     </option>
   </component>

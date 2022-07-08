@@ -3,18 +3,14 @@ package com.example.studyandroid.study.download
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import androidx.compose.ui.res.integerArrayResource
 import androidx.core.content.FileProvider
 import com.arialyy.aria.core.Aria
 import com.arialyy.aria.core.download.DownloadTaskListener
 import com.arialyy.aria.core.task.DownloadTask
-import com.example.studyandroid.R
 import com.example.studyandroid.base.BaseActivity
 import com.example.studyandroid.databinding.ActivityDownloadBinding
-import com.example.studyandroid.utils.showLog
 import java.io.File
 import java.lang.Exception
 

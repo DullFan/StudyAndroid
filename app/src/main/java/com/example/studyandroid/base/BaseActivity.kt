@@ -1,11 +1,8 @@
 package com.example.studyandroid.base
 
-import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.ui.res.integerArrayResource
 
 open class BaseActivity : AppCompatActivity() {
 

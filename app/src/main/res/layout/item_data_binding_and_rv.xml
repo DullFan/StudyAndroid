@@ -2,19 +2,24 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <variable
+            name="data"
+            type="String" />
     </data>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.button.MaterialButton
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:textAllCaps="false"
-            android:id="@+id/item_main_rv_button" />
+            android:text="@{data}"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:padding="10dp" />
+
     </LinearLayout>
 </layout>
