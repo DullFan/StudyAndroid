@@ -11,3 +11,6 @@ dependencyResolutionManagement {
 rootProject.name = "StudyAndroid"
 include ':app'
 include ':skinlib'
+include ':WebViewModule'
+include ':common'
+include ':base'

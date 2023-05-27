@@ -30,13 +30,14 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2, Obser
             Context.class, AttributeSet.class};
 
     private static final HashMap<String, Constructor<? extends View>> mConstructorMap =
-            new HashMap<String, Constructor<? extends View>>();
+            new HashMap<>();
 
     // 当选择新皮肤后需要替换View与之对应的属性
     // 页面属性管理器
     private SkinAttribute skinAttribute;
     // 用于获取窗口的状态框的信息
     private Activity activity;
+    private boolean dialogFlag;
 
     public SkinLayoutInflaterFactory(Activity activity) {
         this.activity = activity;
@@ -45,18 +46,23 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2, Obser
 
     @Override
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
-        //换肤就是在需要时候替换 View的属性(src、background等)
-        //所以这里创建 View,从而修改View属性
-        View view = createSDKView(name, context, attrs);
-        if (null == view) {
-            view = createView(name, context, attrs);
+        if (SkinFlag.dialogFlag) {
+            //换肤就是在需要时候替换 View的属性(src、background等)
+            //所以这里创建 View,从而修改View属性
+            View view = createSDKView(name, context, attrs);
+            if (null == view) {
+                view = createView(name, context, attrs);
+            }
+            //这就是我们加入的逻辑
+            if (null != view) {
+                //加载属性
+                skinAttribute.look(view, attrs);
+            }
+            return view;
+        } else {
+            return null;
         }
-        //这就是我们加入的逻辑
-        if (null != view) {
-            //加载属性
-            skinAttribute.look(view, attrs);
-        }
-        return view;
+
     }
 
 
@@ -67,8 +73,8 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2, Obser
             return null;
         }
         //不包含就要在解析的 节点 name前，拼上： android.widget. 等尝试去反射
-        for (int i = 0; i < mClassPrefixList.length; i++) {
-            View view = createView(mClassPrefixList[i] + name, context, attrs);
+        for (String s : mClassPrefixList) {
+            View view = createView(s + name, context, attrs);
             if (view != null) {
                 return view;
             }
@@ -82,6 +88,7 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2, Obser
         try {
             return constructor.newInstance(context, attrs);
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return null;
     }
@@ -96,6 +103,7 @@ public class SkinLayoutInflaterFactory implements LayoutInflater.Factory2, Obser
                 constructor = clazz.getConstructor(mConstructorSignature);
                 mConstructorMap.put(name, constructor);
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         return constructor;

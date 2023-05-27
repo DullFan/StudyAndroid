@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".study.customizeview.cust_fm5.CustFm5">
+    tools:context=".study.xutils.XUtilsActivity">
 
-    <com.example.studyandroid.study.customizeview.cust_fm5.CustFm5View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="文本测试"
+        android:textSize="16dp"
+        android:id="@+id/xutils_text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

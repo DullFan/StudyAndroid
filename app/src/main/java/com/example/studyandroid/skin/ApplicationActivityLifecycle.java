@@ -1,6 +1,5 @@
 package com.example.studyandroid.skin;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
@@ -40,19 +39,27 @@ public class ApplicationActivityLifecycle implements Application.ActivityLifecyc
             //Android 布局加载器 使用 mFactorySet 标记是否设置过Factory
             //如设置过抛出一次
             //设置 mFactorySet 标签为false
-            @SuppressLint("SoonBlockedPrivateApi") Field field = LayoutInflater.class.getDeclaredField("mFactorySet");
-            field.setAccessible(true);
-            field.setBoolean(layoutInflater, false);
+            Class<LayoutInflaterCompat> compatClass = LayoutInflaterCompat.class;
+            Class<LayoutInflater> inflaterClass = LayoutInflater.class;
+            try {
+                Field sCheckedField = compatClass.getDeclaredField("sCheckedField");
+                sCheckedField.setAccessible(true);
+                sCheckedField.setBoolean(layoutInflater, false);
+                Field mFactory = inflaterClass.getDeclaredField("mFactory");
+                mFactory.setAccessible(true);
+                Field mFactory2 = inflaterClass.getDeclaredField("mFactory2");
+                mFactory2.setAccessible(true);
+                SkinLayoutInflaterFactory factory = new SkinLayoutInflaterFactory(activity);
+                mFactory2.set(layoutInflater, factory);
+                mFactory.set(layoutInflater, factory);
+                mLayoutInflaterFactories.put(activity, factory);
+                mObserable.addObserver(factory);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        //使用factory2 设置布局加载工程
-        SkinLayoutInflaterFactory skinLayoutInflaterFactory = new SkinLayoutInflaterFactory
-                (activity);
-        LayoutInflaterCompat.setFactory2(layoutInflater, skinLayoutInflaterFactory);
-        mLayoutInflaterFactories.put(activity, skinLayoutInflaterFactory);
-        mObserable.addObserver(skinLayoutInflaterFactory);
     }
 
     @Override

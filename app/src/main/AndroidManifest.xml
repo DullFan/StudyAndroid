@@ -34,6 +34,18 @@
         android:theme="@style/Theme.StudyAndroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".study.xutils.XUtilsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.alerter.AlerterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.loadsir.LoadSirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.smartrefreshlayout.SmartRefreshLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".study.coordinator_layout.CoordinatorLayoutActivity"
             android:exported="false" />
         <activity

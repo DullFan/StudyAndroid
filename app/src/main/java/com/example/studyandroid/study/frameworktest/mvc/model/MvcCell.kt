@@ -1,6 +1,6 @@
 package com.example.studyandroid.study.frameworktest.mvc.model
 
-class MvcCell() {
+class MvcCell {
     var mvcPlayer: MvcPlayer? = null
         get() {
             return field

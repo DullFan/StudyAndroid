@@ -15,6 +15,7 @@ import java.util.Observable;
 public class SkinManager extends Observable {
 
     private volatile static SkinManager instance;
+
     /**
      * Activity生命周期回调
      */

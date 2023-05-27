@@ -12,7 +12,6 @@ import androidx.core.view.ViewCompat;
 
 import com.example.studyandroid.skin.utils.SkinResources;
 import com.example.studyandroid.skin.utils.SkinThemeUtils;
-import com.example.studyandroid.study.customizeview.cust_fm1.CustomizeViewFragmentUi1;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 
@@ -34,10 +33,6 @@ public class SkinAttribute {
         mAttributes.add("drawableRight");
         mAttributes.add("drawableBottom");
         mAttributes.add("backgroundTint");
-        mAttributes.add("trackColor");
-        mAttributes.add("indicatorColor");
-        mAttributes.add("changeColor");
-        mAttributes.add("originColor");
     }
 
     //记录换肤需要操作的View与属性信息
@@ -51,7 +46,6 @@ public class SkinAttribute {
         for (int i = 0; i < attrs.getAttributeCount(); i++) {
             //获得属性名  textColor/background
             String attributeName = attrs.getAttributeName(i);
-            ;
 
             if (mAttributes.contains(attributeName)) {
                 // 获取属性值
@@ -70,8 +64,6 @@ public class SkinAttribute {
                     // 正常以 @ 开头
                     resId = Integer.parseInt(attributeValue.substring(1));
                 }
-
-
                 SkinPair skinPair = new SkinPair(attributeName, resId);
                 mSkinPars.add(skinPair);
             }

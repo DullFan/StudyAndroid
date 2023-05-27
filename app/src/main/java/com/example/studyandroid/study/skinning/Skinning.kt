@@ -1,16 +1,22 @@
 package com.example.studyandroid.study.skinning
 
 import android.Manifest
+import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
 import com.arialyy.aria.core.Aria
 import com.arialyy.aria.core.download.DownloadTaskListener
 import com.arialyy.aria.core.task.DownloadTask
+import com.example.studyandroid.R
 import com.example.studyandroid.base.BaseActivity
 import com.example.studyandroid.databinding.ActivitySkinningBinding
+import com.example.studyandroid.skin.SkinFlag
 import com.example.studyandroid.skin.SkinManager
 import com.example.studyandroid.utils.showLog
 import java.lang.Exception
+import java.util.Calendar
+
+var dialogFlag = true
 
 class Skinning : BaseActivity(), DownloadTaskListener {
 
@@ -34,8 +40,9 @@ class Skinning : BaseActivity(), DownloadTaskListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(viewBinding.root)
-        Aria.download(this).register();
+        Aria.download(this).register()
         launcherActivity.launch(permissions)
+        showLog("重新执行")
         viewBinding.skinningButton2.setOnClickListener {
             //获取缓存路径
             val skinName = "${baseContext.filesDir}/test.apk"
@@ -44,6 +51,23 @@ class Skinning : BaseActivity(), DownloadTaskListener {
 
         viewBinding.skinningButton.setOnClickListener {
             SkinManager.getInstance().loadSkin(null)
+        }
+
+        viewBinding.dialogButton.setOnClickListener {
+            SkinFlag.dialogFlag = false
+            val c: Calendar = Calendar.getInstance()
+            val year: Int = c.get(Calendar.YEAR)
+            val month: Int = c.get(Calendar.MONTH)
+            val day: Int = c.get(Calendar.DAY_OF_MONTH)
+            val dpd = DatePickerDialog(
+                layoutInflater.context,
+                null, year, month, day
+            )
+            dpd.show()
+
+            dpd.setOnCancelListener {
+                SkinFlag.dialogFlag = true
+            }
         }
 
         viewBinding.skinningButton3.setOnClickListener {

@@ -4,6 +4,8 @@
 
 功能名字 --- 包名
 
+有些Demo就懒得画界面了，运行起来看Demo
+
 目前有：
 
 * 刮刮乐 --- scratch
@@ -21,3 +23,7 @@
 * 协程 + Flow --- coroutine
 * DataBinding 和 RecyclerView 联合使用 --- databinding_and_rv
 * CoordinatorLayout的使用 --- coordinator_layout
+* SmartRefreshLayout的使用 --- smartrefreshlayout
+* LoadSir --- loadsir
+* Alerter的使用 --- alerter
+* 仿XUtils手写注解绑定 --- xutils

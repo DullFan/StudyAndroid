@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -37,14 +36,29 @@
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17685185185185184" />
         <entry key="..\:/AStudyData/ATest/StudyAndroid/app/src/main/res/xml/scene_24.xml" value="0.23125" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/WebViewModule/src/main/res/layout/activity_web_view.xml" value="0.23489583333333333" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/WebViewModule/src/main/res/layout/fragment_web_view.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/alerter_alert_button_background.xml" value="0.1" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_alerter.xml" value="0.26671732522796354" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_annotation.xml" value="0.2210144927536232" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_coordinator_layout.xml" value="0.15670289855072464" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_coroutine.xml" value="0.23641304347826086" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_data_binding_and_rv.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_data_store_study.xml" value="0.109375" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_hilt.xml" value="0.25815217391304346" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_lean_cloud_log_in.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_load_sir.xml" value="0.26671732522796354" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_motion_layout.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_mvc.xml" value="0.12132725430597771" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_mvvm.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_my_card_view.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_shared_elements.xml" value="0.23641304347826086" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_skinning.xml" value="0.2651975683890577" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_smart_refresh_layout.xml" value="0.21189591078066913" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_web_view.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_xutils.xml" value="0.1859375" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/call_back_animate.xml" value="0.26671732522796354" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/call_back_error.xml" value="0.26671732522796354" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout01.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout02.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_coordinator_layout03.xml" value="0.21189591078066913" />
@@ -55,12 +69,23 @@
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_cust_fm5.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_data_binding_and_rv.xml" value="0.2047008547008547" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_main_rv.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/activity_toolbar_menu.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/coordinator_layout_layout_menu.xml" value="0.24947916666666667" />
         <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/motion_layout_menu.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_animate.xml" value="0.26671732522796354" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_custom.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_custom_error.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_empty.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_error.xml" value="0.26671732522796354" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_loading.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_lottie_empty.xml" value="0.26671732522796354" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_lottie_loading.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_placeholder.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/StudyAndroid/base/src/main/res/layout/layout_timeout.xml" value="0.24947916666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

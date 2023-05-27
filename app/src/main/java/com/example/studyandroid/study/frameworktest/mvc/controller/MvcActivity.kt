@@ -1,6 +1,5 @@
 package com.example.studyandroid.study.frameworktest.mvc.controller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,14 +10,13 @@ import android.widget.TextView
 import com.example.studyandroid.R
 import com.example.studyandroid.base.BaseActivity
 import com.example.studyandroid.study.frameworktest.mvc.model.MvcBoard
-import com.example.studyandroid.utils.showLog
+import kotlinx.coroutines.Dispatchers
 
 class MvcActivity : BaseActivity() {
     lateinit var model: MvcBoard
     lateinit var buttonGrid: ViewGroup
     lateinit var winnerPlayerViewGroup: View
     lateinit var winnerPlayerLabel: TextView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -31,8 +31,6 @@ public class SkinThemeUtils {
         return resIds;
     }
 
-
-
     public static void updateStatusBarColor(Activity activity) {
         //5.0以上才能修改
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -63,5 +61,4 @@ public class SkinThemeUtils {
             activity.getWindow().setNavigationBarColor(color);
         }
     }
-
 }
